@@ -5,7 +5,6 @@ This project is an emotion detection system that uses natural language processin
 ## Features
 
 - Text preprocessing and cleaning
-- Feature extraction using GloVe word embeddings
 - Emotion classification using machine learning models
 
 ## Requirements
@@ -30,6 +29,8 @@ This project is an emotion detection system that uses natural language processin
    - Visit [https://nlp.stanford.edu/projects/glove/](https://nlp.stanford.edu/projects/glove/)
    - Download the desired GloVe embedding file (e.g., `glove.6B.zip`)
    - Unzip the file and place the `.txt` embedding files inside the `embeddings/` folder in this project.
+
+   - OR you could run the ./glove.sh script to do this automatically
 
 ## Usage
 
