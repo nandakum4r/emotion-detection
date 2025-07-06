@@ -17,7 +17,7 @@ This project is an emotion detection system that uses natural language processin
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/emotion-detection.git
+   git clone https://github.com/nandakum4r/emotion-detection.git
    cd emotion-detection
    ```
 
