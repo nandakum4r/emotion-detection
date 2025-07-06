@@ -12,19 +12,24 @@ nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
-# Load GloVe .pkl once
 @st.cache_resource
 def load_glove():
-    return joblib.load("embeddings/glove.6B.300d.pkl")
+    glove_path = "embeddings/glove.6B.300d.txt"
+    glove = {}
+    with open(glove_path, 'r', encoding='utf8') as f:
+        for line in f:
+            values = line.strip().split()
+            word = values[0]
+            vector = np.array(values[1:], dtype=np.float32)
+            glove[word] = vector
+    return glove
 
-# Load saved model and label encoder
 @st.cache_resource
 def load_model():
-    clf = joblib.load("model/logreg_model.pkl")
-    le = joblib.load("model/label_encoder.pkl")
+    clf = joblib.load("models/logreg_model.pkl")
+    le = joblib.load("models/label_encoder.pkl")
     return clf, le
 
-# Text preprocessing
 def preprocess_text(text):
     text = re.sub(r'[^a-zA-Z]', ' ', text.lower())
     tokens = nltk.word_tokenize(text)
