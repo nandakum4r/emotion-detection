@@ -3,4 +3,8 @@ streamlit==1.46.1
 nltk==3.9.1
 joblib==1.5.1clear
 tqdm>=4.67.1
+scikit-learn-1.6.1 
+scipy-1.13.1 
+sklearn-0.0 
+threadpoolctl-3.6.0
 
