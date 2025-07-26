@@ -5,7 +5,7 @@ This project is an emotion detection system that uses natural language processin
 ## Features
 
 - Text preprocessing and cleaning
-- Emotion classification using machine learning models
+- Emotion classification using logistic regression model
 
 ## Requirements
 
