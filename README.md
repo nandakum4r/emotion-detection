@@ -30,7 +30,7 @@ This project is an emotion detection system that uses natural language processin
    - Download the desired GloVe embedding file (e.g., `glove.6B.zip`)
    - Unzip the file and place the `.txt` embedding files inside the `embeddings/` folder in this project.
 
-   - OR you could run the ./glove.sh script to do this automatically
+   - **OR you could run the ./glove.sh script to do this automatically**
 
 ## Usage
 
